@@ -1,18 +1,80 @@
-body {
-    border: none;
-    background-color: white;
+html {
+    background: url(../img/HtmlBackground.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.mainContainer {
     height: 100%;
+    width: 80%;
+    opacity: 1;
+    background-color: white;
+    box-shadow:0px 0px 3px 3px #858585;
+    -webkit-box-shadow:0px 0px 10px 10px #858585;
+    -moz-box-shadow:0px 0px 10px 10px #858585;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 0;
+}
+.rootAccess {
     width: 100%;
+    opacity: 1;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 100;
+    text-align: center;
+}
+.rootAccess_showAccessPort {
+    top: 5px;
+    -webkit-transition:top linear 0.5s;
+    transition:top linear 0.5s;
+}
+.rootAccess_hideAccessPort {
+    top: -100px;
+    -webkit-transition:top linear 0.5s;
+    transition:top linear 0.5s;
 }
 .aboutMe {
-    border: none;
-    box-shadow: 10px 10px 5px #888888;
-    background-color: chartreuse;
-    height: 40%;
-    width: 40%;
+    color: white;
+    background-color: black;
+    left: 10%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10px;
+    font-weight: bold;
+    position: fixed;
+    z-index: 1;
+    bottom: 5px;
+    border-radius: 5px 5px 5px 5px;
+    vertical-align: middle;
+    padding: 10px 10px 10px 10px;
+    line-height: 0.5em;
+}
+.aboutMe_info {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: black;
+    float: left;
 }
 .aboutMe_img {
+    vertical-align:bottom;
     border: none;
-    width: 35%;
-    height: 70%;
+    width: 8%;
+    height: 10%;
+    opacity: 1;
+}
+.accessPortManipulator {
+    left: 0;
+    position: fixed;
+    width: 1%;
+    height: 1%;
+}
+.accessPortManipulator_red {
+    background-color: red;
+}
+.accessPortManipulator_green {
+    background-color: green;
 }
