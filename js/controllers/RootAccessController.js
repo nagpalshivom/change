@@ -4,7 +4,7 @@ RootAccess.controller('RootAccessController', [ '$scope', '$http',  function($sc
     $scope.GrantRootAccess = function() {
         $http({
             method : 'POST',
-            url : 'http://localhost:9123/hfusppu',
+            url : 'hfusppu',
             withCredential : true,
             data : {
                 'user' : $scope.rootAccess_adminCredName,
